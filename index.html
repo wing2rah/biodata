@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Biodata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f4ff, #fff3f3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .biodata-container {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .biodata-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, #ff758f, #ffb3c6);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .mantra {
+            text-align: center;
+            color: #e91e63;
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9fafb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #e91e63;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section p, .section li {
+            color: #34495e;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section i {
+            color: #ff758f;
+            font-size: 1.2rem;
+        }
+
+        .personal-box {
+            background: linear-gradient(135deg, #fce4ec, #fff);
+        }
+
+        .address-box {
+            background: linear-gradient(135deg, #e3f2fd, #fff);
+        }
+
+        .education-box {
+            background: linear-gradient(135deg, #e8f5e9, #fff);
+        }
+
+        .languages-box, .hobbies-box {
+            background: linear-gradient(135deg, #fffde7, #fff);
+        }
+
+        .download-button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 24px;
+            background: #e91e63;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #c2185b;
+            transform: scale(1.05);
+        }
+
+        .download-button i {
+            margin-right: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .biodata-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .mantra {
+                font-size: 0.95rem;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            .section h2 {
+                font-size: 1.2rem;
+            }
+
+            .section p, .section li {
+                font-size: 0.9rem;
+            }
+
+            .download-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .mantra {
+                font-size: 0.85rem;
+            }
+
+            .section {
+                padding: 12px;
+            }
+
+            .section h2 {
+                font-size: 1.1rem;
+            }
+
+            .section p, .section li {
+                font-size: 0.85rem;
+            }
+
+            .download-button {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="biodata-container">
+        <h1>Marriage Biodata</h1>
+        <div class="mantra">ॐ गं गणपतये नमः (Om Gam Ganapataye Namah)</div>
+       
+        <div class="section personal-box">
+            <h2><i class="fas fa-user"></i> Personal Details</h2>
+            <p><i class="fas fa-id-card"></i> <strong>Name:</strong> Rajnandani Mishra</p>
+            <p><i class="fas fa-user-tie"></i> <strong>Father's Name:</strong> Mukesh Mishra</p>
+            <p><i class="fas fa-birthday-cake"></i> <strong>Age:</strong> 21 Years</p>
+            <p><i class="fas fa-ruler-vertical"></i> <strong>Height:</strong> 168 cm</p>
+            <p><i class="fas fa-weight"></i> <strong>Weight:</strong> 58 kg</p>
+            <p><i class="fas fa-paint-brush"></i> <strong>Complexion:</strong> Fair</p>
+            <p><i class="fas fa-pray"></i> <strong>Religion:</strong> Hinduism</p>
+            <p><i class="fas fa-users"></i> <strong>Caste:</strong> Brahmin</p>
+            <p><i class="fas fa-scroll"></i> <strong>Gotra:</strong> Bashisht</p>
+        </div>
+       
+        <div class="section address-box">
+            <h2><i class="fas fa-map-marker-alt"></i> Address</h2>
+            <p><i class="fas fa-home"></i> <strong>Permanent:</strong> Vill-Misrauliya, P.O-Sikatia, P.S Govindganj, East Champaran, Bihar</p>
+            <p><i class="fas fa-map-pin"></i> <strong>Current:</strong> Bhadreshwar, Hooghly, West Bengal</p>
+        </div>
+       
+        <div class="section education-box">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <p><i class="fas fa-book"></i> <strong>Degree:</strong> Graduation in English</p>
+        </div>
+       
+        <div class="section languages-box">
+            <h2><i class="fas fa-language"></i> Languages Known</h2>
+            <ul>
+                <li><i class="fas fa-comment"></i> Hindi</li>
+                <li><i class="fas fa-comment"></i> Bangla</li>
+            </ul>
+        </div>
+       
+        <div class="section hobbies-box">
+            <h2><i class="fas fa-heart"></i> Hobbies</h2>
+            <ul>
+                <li><i class="fas fa-utensils"></i> Cooking</li>
+                <li><i class="fas fa-book-open"></i> Reading</li>
+                <li><i class="fas fa-plane"></i> Travel</li>
+            </ul>
+        </div>
+       
+        <a href="rajnandini mishra.pdf" download class="download-button">
+            <i class="fas fa-download"></i> Download Biodata PDF
+        </a>
+       
+        <div class="footer">
+            Designed with 🥰💖
+        </div>
+    </div>
+</body>
+  </html>
